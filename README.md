@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task Manager App
+
+A modern, full-stack task management application built with Next.js, React, TypeScript, and Firebase. This application allows users to manage their tasks with real-time updates, user authentication, and a clean, professional interface.
+
+## Live Demo
+
+🚀 **Check out our live application**: [Task Manager App](https://task-manager-iaqjuwji1-tilepranjal23-gmailcoms-projects.vercel.app/)
+
+Experience the full functionality of our task management system in action! The application is deployed on Vercel for optimal performance and reliability.
+
+## Features
+
+- 🔐 **User Authentication**: Secure signup and login functionality
+- ✨ **Real-time Updates**: Instant task synchronization across devices
+- 🌓 **Dark/Light Mode**: Support for both dark and light themes
+- 📱 **Responsive Design**: Works seamlessly across all device sizes
+- ✅ **Task Management**: Create, read, update, and delete tasks
+- 🎨 **Modern UI**: Clean interface with navy blue and sky blue color scheme
+- 🔄 **Real-time Sync**: Changes reflect instantly using Firestore
+
+## Tech Stack
+
+### Frontend
+- React
+- Next.js
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+
+### Backend
+- Firebase
+  - Firestore for database
+  - Firebase Authentication
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js (v14 or higher)
+- npm or yarn
+- Firebase account
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/task-manager-app.git
+cd task-manager-app
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Set up environment variables:
+Create a `.env.local` file in the root directory and add your Firebase configuration:
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_auth_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_storage_bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+```
+
+4. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Key Components
 
-## Learn More
+- **AuthForm**: Handles user authentication
+- **TaskManager**: Main task management interface
+- **AddTaskForm**: Form for creating new tasks
+- **TaskList**: Displays user's tasks
+- **TaskItem**: Individual task component
 
-To learn more about Next.js, take a look at the following resources:
+## Firebase Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Create a new Firebase project
+2. Enable Authentication and Firestore
+3. Set up authentication methods (email/password)
+4. Create necessary Firestore collections
+5. Add Firebase configuration to environment variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Development
 
-## Deploy on Vercel
+```bash
+# Run development server
+npm run dev
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Build for production
+npm run build
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Run production server
+npm start
+
+# Run linting
+npm run lint
+```
+
+
